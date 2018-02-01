@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Q＆A</title>
+  </head>
+	<body>
+	   <form  id='form'>
+	     你的興趣:
+		 <input type='text'  id='like'/><br>
+		 你的專長:
+		 <input type='text'  id='able'/><br>
+	
+		 你最好的朋友:
+		 <input type='text'  id='friend'/><br>
+		
+		 你最喜歡的科目:
+		 <input type='text'  id='subject'/><br>
+	
+	     你的生日:
+		 <input type='text'  id='birthday'/><br>
+
+	     你的星座:
+		 <input type='text'  id='star'/><br>
+		 
+		 <input type='button' name='submit' value='送出' onclick='QA();'/>
+	   </form>
+	   <script type="text/javascript">
+	   function QA() {
+		  var like =document.getElementById('like').value;		
+		 var able =document.getElementById('able').value;
+		 var friend =document.getElementById('friend').value;
+		 var subject =document.getElementById('subject').value;
+		 var birthday =document.getElementById('birthday').value;
+		 var star =document.getElementById('star').value;
+		 alert('你的興趣是:'+like+'\n你的專長是:'+able+'\n你最好的朋友是:'+friend+'\n你最喜歡的科目是:'+subject+'\n你的生日:'+birthday+'\n你的星座:'+star);
+	   }
+	   </script>
+	    <style>
+  #like {
+    color:#FF0066;
+	text-align: top;
+	font-size: 25px;
+	  }
+  #able {
+    color:#FF6600;
+	text-align: top;
+	font-size: 25px;
+	  }
+  #friend {
+    color:#CCFF00	;
+	text-align: top;
+	font-size: 25px;
+	  }
+  #subject {
+    color:#7FFFD4;
+	text-align: top;
+	font-size: 25px;
+	  }
+  #birthday {
+    color:#00CCFF;
+	text-align: top;
+	font-size: 25px;
+	  }
+  #star{
+    color:#990099;
+	text-align: top;
+	font-size: 25px;
+	  }
+  form {
+    color:#D2691E;
+	text-align: top;
+	font-size: 25px;
+	  }
+  
+	</style>
+	</body>
+  </html>
+<script language="javascript">
+function Changeword(){
+    document.getElementById("Changeme").innerHTML="<span style='font-size:100px'>我是人</span>";
+}
+</script>
+<title>Change it </title>
+<div onmouseover="Changeword()" id="Changeme">
+你是誰
+</div>
+
+<style>
+#Changeme{
+	background-color:#990099; 
+	color:#FF0099;width:100px; 
+	padding:100px;
+	font-size:50px;
+    }
+</style>
